@@ -1,0 +1,4 @@
+.hello {
+    composes: b from "./b.css";
+    background-color: yellow;
+}
