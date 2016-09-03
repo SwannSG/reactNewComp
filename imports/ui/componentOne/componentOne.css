@@ -1,4 +1,5 @@
-$blue:   #056ef0;
+/*$blue:   #056ef0;*/
+
 
 .hello {
     composes: b from "./b.css";
