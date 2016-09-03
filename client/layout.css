@@ -1,5 +1,8 @@
 /*layout.css contains layout specific configuration information*/
 
-:global(#app) {
-    width:1000px;
+:global(#modal) {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 500px;
 }
