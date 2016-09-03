@@ -34,3 +34,5 @@ Utility classes are very helpful. They provide nice names that describe what the
 }
 ```
 Somewhat verbose. But it does mean we can have our Utility Classes in a separate module and pull out the ones we need, when we need them, and only in the CSS. Here we can provide nice semantic names.
+
+Composition is only allowed for a single selector.

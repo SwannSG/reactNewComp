@@ -1,0 +1,5 @@
+/*layout.css contains layout specific configuration information*/
+
+:global(#app) {
+    width:500px;
+}

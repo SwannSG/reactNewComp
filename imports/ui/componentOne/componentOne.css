@@ -1,9 +1,7 @@
 $blue:   #056ef0;
-$file: ./b.css;
 
 .hello {
     composes: b from "./b.css";
-composes: b from $file;
     background-color: yellow;
     background-color: $blue;
 }

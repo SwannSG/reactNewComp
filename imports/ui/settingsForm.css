@@ -1,0 +1,45 @@
+
+.cardWithShadowAndRoundCorners {
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.6);
+    box-shadow: rgba(88, 86, 86, 0.721569) 4px 5px 5px -1px;
+}
+
+.closeButtonTransparent {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    font-size:130%;
+    overflow: hidden;
+    outline:none;
+}
+
+.outer {
+    composes: cardWithShadowAndRoundCorners;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid gray;
+    line-height: 1.25;
+}
+
+.heading > h4 {
+    width: 90%;
+}
+
+.heading > button {
+    /*composes: closeButtonTransparent;*/
+    width: 10%;
+    /*margin-right: -9px;*/
+    width: 10%;
+}
