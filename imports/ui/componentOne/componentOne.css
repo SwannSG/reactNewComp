@@ -1,4 +1,13 @@
+$blue:   #056ef0;
+
 .hello {
     composes: b from "./b.css";
     background-color: yellow;
+    background-color: $blue;
+}
+
+.parent {
+    display: flex;
+    transition: all 4s ease;
+    filter: grayscale(50%);
 }

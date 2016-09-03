@@ -6,6 +6,10 @@
 }
 /* end potent global reset*/
 
+.someGlobalClass {
+    text-transform: uppercase;
+}
+
 
 /*Responsive Typographic Scale*/
 /*set base font and initial font size*/

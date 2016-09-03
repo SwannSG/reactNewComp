@@ -13,7 +13,9 @@ class ComponentOne extends Component {
 
     render() {
         return (
-            <h1 className={styles.hello}>Hello there</h1>
+            <div className={styles.parent}>
+                <h2 className={styles.hello}>Hello there</h2>
+            </div>    
         )
     }
 }
