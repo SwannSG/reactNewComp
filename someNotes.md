@@ -28,7 +28,7 @@ We define the JSX component with the minimum html possible. Each div gets a clas
 
 Utility classes are very helpful. They provide nice names that describe what they do. But now we can keep them in the CSS world where they belong. No overflow into the html. We can do that because of composability.
 
-'''css
+'''javascript
 .someClass: {
     composes: btn from "./someUtilityClassFile.css";
 }
