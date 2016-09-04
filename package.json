@@ -18,15 +18,23 @@
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0"
   },
+
   "cssModules": {
     "postcssPlugins": {
-      "postcss-simple-vars": {},
-      "postcss-modules-values": {},
-      "postcss-nested": {},
-      "postcss-modules-local-by-default": {},
-      "postcss-modules-extract-imports": {},
-      "postcss-modules-scope": {},
-      "autoprefixer": {}
+        "postcss-simple-vars": {
+            "inlineOptions": {
+                "variables": {
+                    "fontFamily": "'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+                    "fontSize": "16px"
+                }
+            }
+        },
+        "postcss-modules-values": {},
+        "postcss-nested": {},
+        "postcss-modules-local-by-default": {},
+        "postcss-modules-extract-imports": {},
+        "postcss-modules-scope": {},
+        "autoprefixer": {}
     }
   }
 }

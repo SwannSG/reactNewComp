@@ -1,5 +1,7 @@
 .button {
     composes: cardWithShadowAndRoundCorners from "../custom/utilityClasses.css";
+    font-family: $fontFamily;
+    fot-size: $fontSize;
     display: inline-block;
     text-align: center;
     white-space: nowrap;

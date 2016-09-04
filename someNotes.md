@@ -44,3 +44,42 @@ The difficulty with Utility Classes is how to structure and define them. Not the
 I guess the question is, what benefit is composition providing. Is it to minimise CSS property-value pairs, or is it to make CSS more readable, or both. And then if you know CSS very well, can you not read it directly and figure out what it does. Maybe not so easy.
 
 What performance gain do you get by making the CSS more concise. I suspect not much. That been the case (not verified) composability is primarily there to promote readibility.
+
+##Global variables
+
+Using the *postcss-simple-vars* it is possible to configure global variables that can be referenced in any CSS file. Very handy for things like base font-family, size and colors.
+
+```javascript
+.someClass: {
+    font-family: $fontFamily;
+}
+// where $fontFamily is a global variable
+```
+
+##CSS Composition
+
+It is rapidly becoming clear that CSS composability is the big thing. For a JSX parent component, that pulls in sub-components, we still define all the CSS at the parent component level. However, we happily pull in sub-component CSS to achieve this, using *composes* in the parent component CSS file.
+
+```javascript
+// JSX world, parentComponent
+import styles from './parentComponent.css';
+class parentComponent extends Component {
+    render() {
+        return (
+            <div className={styles.outer}>
+                <SubCompOne className={styles.subCompOne} />
+            </div>    
+        )
+    }
+}
+// end JSX world
+
+// CSS world
+.subCompOne {
+    composes: subCompOne from './subCompOne.css';
+    // add other properties here
+}
+// end CSS world
+```  
+
+Notice that if there is existing CSS that goes along with SubCompOne it does not go to waste. We use it to compose the class properties for SubCompOne (class=subCompOne).

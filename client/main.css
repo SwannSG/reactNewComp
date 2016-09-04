@@ -1,3 +1,6 @@
+$skaap: Skaap;
+
+
 /*potent global reset*/
 * {
     margin: 0;
@@ -7,7 +10,8 @@
 /* end potent global reset*/
 
 .someGlobalClass {
-    text-transform: uppercase;
+    font-family: $skaap;
+    font-family: primaryfont;
 }
 
 

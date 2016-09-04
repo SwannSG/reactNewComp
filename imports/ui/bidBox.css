@@ -1,4 +1,8 @@
 .passBtn {
     composes: button from './button.css';
-    color:red;
+    color: white;
+    background-image: linear-gradient(rgb(61, 162, 27) 0%, rgb(105, 220, 18) 100%);
+/*
+    font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;*/
 }
