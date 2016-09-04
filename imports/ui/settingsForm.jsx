@@ -17,8 +17,15 @@ class SettingsForm extends Component {
        };
        this.updateState = this.updateState.bind(this);
        this.handleExit = this.handleExit.bind(this);
+       this.handleKeyStroke = this.handleKeyStroke.bind(this);
     }
 
+    handleKeyStroke(event) {
+        console.log('handleKeyStroke');
+        if (event.keyCode===27) {
+            this.handleExit(event);
+        }
+    }
 
     handleExit(event) {
         console.log('handleClick');
@@ -39,6 +46,13 @@ class SettingsForm extends Component {
         this.setState(obj);
     }
 
+    componentDidMount() {
+       window.addEventListener("keydown", this.handleKeyStroke)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("keydown", this.handleKeyStroke)
+    }
 
     render() {
         console.log('render');
@@ -74,7 +88,7 @@ class SettingsForm extends Component {
                         <input className={styles.checkbox} type="checkbox" name="showOwnPointCount" ref="showOwnPointCount" checked={this.state.showOwnPointCount} onChange={this.updateState}/>
                     </div>
                 </div>
-                <div className={styles.footer}></div>
+                {/* <div className={styles.footer}>Footer goes here</div> */}
             </div>
         );
     }
