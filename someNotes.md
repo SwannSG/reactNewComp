@@ -41,6 +41,6 @@ Composition is only allowed for a single selector.
 
 The difficulty with Utility Classes is how to structure and define them. Not the technicality of doing this, but the logical and natural way to break things up. I have no clear idea how to best do this. There are some excellent Utility class libraries out there, but I am not entirely convinced they offer the best approach.
 
-I guess the question what benefit is composition providing. Is it to minimise CSS property-value pairs, or is it to make CSS more readable, or both. And then if you know CSS very well, can you not read it directly and figure out what it does. Maybe not so easy.
+I guess the question is, what benefit is composition providing. Is it to minimise CSS property-value pairs, or is it to make CSS more readable, or both. And then if you know CSS very well, can you not read it directly and figure out what it does. Maybe not so easy.
 
 What performance gain do you get by making the CSS more concise. I suspect not much. That been the case (not verified) composability is primarily there to promote readibility.

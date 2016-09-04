@@ -12,7 +12,7 @@ class Button extends Component {
 
     render() {
         return (
-            <button onClick={this.props.updateState} value={this.props.value} >
+            <button className={this.props.className} onClick={this.props.updateState} value={this.props.value} >
                 {this.props.label}
             </button>
         );

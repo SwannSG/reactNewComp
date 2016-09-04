@@ -13,6 +13,7 @@ class BidBox extends Component {
     }
 
     render() {
+        console.log(styles.passBtn);
         return (
             <div className={styles.outer}>
                 <Button classname={styles.passBtn} updateState={function() {}} value={'hello'} label={'Hello'} />
