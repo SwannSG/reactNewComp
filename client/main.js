@@ -3,6 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { render } from 'react-dom';
 
 import { SettingsForm } from '../imports/ui/settingsForm.jsx';
+import { BidBox } from '../imports/ui/bidBox.jsx';
 
 import './layout.css';
 
@@ -15,5 +16,6 @@ var settings = {
     }
 
 Meteor.startup(() => {
-  render(<SettingsForm settings={settings}/>, document.getElementById('app'));
+  // render(<SettingsForm settings={settings}/>, document.getElementById('app'));
+  render(<BidBox />, document.getElementById('app'));
 });

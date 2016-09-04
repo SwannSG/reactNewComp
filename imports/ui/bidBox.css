@@ -1,0 +1,4 @@
+.passBtn {
+    composes: button from './button.css';
+    color:red;
+}

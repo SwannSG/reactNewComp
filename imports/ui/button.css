@@ -1,0 +1,28 @@
+.button {
+    composes: cardWithShadowAndRoundCorners from "../custom/utilityClasses.css";
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(rgb(233, 234, 241) 0%, rgb(106, 118, 208) 100%);
+    padding: 5px;
+}
+
+
+
+/*styles.pass = {
+// pass button style
+color: 'white',
+backgroundImage: 'linear-gradient(rgb(61, 162, 27) 0%, rgb(105, 220, 18) 100%)'
+}
+
+styles.dbl = {
+// Dbl button style
+color: 'white',
+backgroundImage: 'linear-gradient(rgb(167, 46, 10) 0%, rgb(249, 26, 3) 100%)'
+}
+
+styles.red = {
+color:'red',
+}*/
