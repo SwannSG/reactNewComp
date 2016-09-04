@@ -1,37 +1,8 @@
-
-.cardWithShadowAndRoundCorners {
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,.6);
-    box-shadow: rgba(88, 86, 86, 0.721569) 4px 5px 5px -1px;
-}
-
-.closeButtonTransparent {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor: pointer;
-    font-size:130%;
-    overflow: hidden;
-    outline:none;
-}
-
-.fRow-vCenter-hSpread {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.modal {
-  /*max-height: calc(100% - 100px);*/
-  position: fixed;
-    top: 50%;
-    left: 50%;
-  transform: translate(-50%, -50%);
-}
+/*Styling for settingsForm.jsx
+Requires utilityClasses.css*/
 
 .outer {
-    composes: cardWithShadowAndRoundCorners modal;
+    composes: cardWithShadowAndRoundCorners modal from "../custom/utilityClasses.css";
     /*composes: modal;*/
     padding-left: 20px;
     padding-right: 20px;
@@ -39,7 +10,7 @@
 }
 
     .heading {
-        composes: fRow-vCenter-hSpread;
+        composes: fRow-vCenter-hSpread from "../custom/utilityClasses.css";
         padding-bottom: 10px;
         padding-top: 10px;
         border-bottom: 1px solid gray;
@@ -51,13 +22,13 @@
         }
 
         .closeButton {
-            composes: closeButtonTransparent;
+            composes: closeButtonTransparent from "../custom/utilityClasses.css";
             width: 10%;
             margin-right: -2%;
         }
 
     .labelAndField {
-        composes: fRow-vCenter-hSpread;
+        composes: fRow-vCenter-hSpread from "../custom/utilityClasses.css";
         margin-top: 10px;
         line-height: 1.5;
     }
@@ -71,10 +42,10 @@
             margin-right: -2.3%;
         }
 
-.labelAndField:last-child {
-    padding-bottom: 15px;
+        .labelAndField:last-child {
+            padding-bottom: 15px;
 
-}
+        }
 
     .footer {
         padding-top: 10px;

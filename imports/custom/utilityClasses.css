@@ -1,0 +1,34 @@
+/*simple card with shadow and rounded corners*/
+.cardWithShadowAndRoundCorners {
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.6);
+    box-shadow: rgba(88, 86, 86, 0.721569) 4px 5px 5px -1px;
+}
+
+/*close button X*/
+.closeButtonTransparent {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    font-size:130%;
+    overflow: hidden;
+    outline:none;
+}
+
+/*flex row, vetically centered, horizontally spread*/
+.fRow-vCenter-hSpread {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*modal in screen center, needs work*/
+.modal {
+  /*max-height: calc(100% - 100px);*/
+  position: fixed;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}

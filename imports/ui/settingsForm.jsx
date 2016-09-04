@@ -88,7 +88,6 @@ class SettingsForm extends Component {
                         <input className={styles.checkbox} type="checkbox" name="showOwnPointCount" ref="showOwnPointCount" checked={this.state.showOwnPointCount} onChange={this.updateState}/>
                     </div>
                 </div>
-                {/* <div className={styles.footer}>Footer goes here</div> */}
             </div>
         );
     }
