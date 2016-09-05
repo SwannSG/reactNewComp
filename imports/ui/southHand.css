@@ -1,0 +1,85 @@
+/*xl, extra large*/
+.outer-xl {
+    display:inline-block;
+    background-color: red;
+    position: relative;
+}
+
+.outer-xl img:not(.card1) {
+    margin-left:-180px;
+}
+
+.outer-xl img {
+    /*keep image same size, height=323px*/
+}
+
+.outer-xl .meta {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    background-color: white;
+}
+/*end xl*/
+
+/*l, large*/
+.outer-l {
+    display:inline-block;
+    background-color: red;
+}
+
+.outer-l img:not(.card1) {
+    margin-left:-168px;
+}
+
+.outer-l img {
+    height: 300px
+}
+/*end l*/
+
+/*md, medium*/
+.outer-md {
+    display:inline-block;
+    background-color: red;
+}
+
+.outer-md img:not(.card1) {
+    margin-left:-157px;
+}
+
+.outer-md img {
+    height: 280px;
+}
+/*end md*/
+
+
+/*sm, small*/
+.outer-sm {
+    display:inline-block;
+    background-color: red;
+}
+
+.outer-sm img:not(.card1) {
+    margin-left:-140px;
+}
+
+.outer-sm img {
+    height: 250px;
+}
+/*end sm*/
+
+/*xs, extra small*/
+.outer-xs {
+    display:inline-block;
+    background-color: red;
+}
+
+.outer-xs img:not(.card1) {
+    margin-left:-112px;
+}
+
+.outer-xs img {
+    height: 200px;
+}
+/*end xs*/
