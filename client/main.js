@@ -17,5 +17,5 @@ var settings = {
 
 Meteor.startup(() => {
   // render(<SettingsForm settings={settings}/>, document.getElementById('app'));
-  render(<BidBox />, document.getElementById('app'));
+  render(<BidBox lastBid={'0c'}/>, document.getElementById('app'));
 });

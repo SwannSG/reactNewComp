@@ -1,0 +1,32 @@
+.fnX {
+    margin-right: 3px;
+    font-size: 120%;
+    padding: 2px 7px;
+}
+
+.clubBtn {
+    composes: button from './button.css';
+    composes: fnX;
+}
+
+.diamBtn {
+    composes: button from './button.css';
+    composes: fnX;
+    color: red;
+}
+
+.heartBtn {
+    composes: button from './button.css';
+    composes: fnX;
+    color: red;
+}
+
+.spadeBtn {
+    composes: button from './button.css';
+    composes: fnX;
+}
+
+.ntBtn {
+    composes: button from './button.css';
+    composes: fnX;
+}

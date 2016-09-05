@@ -1,14 +1,14 @@
 .button {
     composes: cardWithShadowAndRoundCorners from "../custom/utilityClasses.css";
     font-family: $fontFamily;
-    fot-size: $fontSize;
+    font-size: $fontSize;
     display: inline-block;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     background-repeat: repeat-x;
     background-image: linear-gradient(rgb(233, 234, 241) 0%, rgb(106, 118, 208) 100%);
-    padding: 5px;
+    padding: 4px 8px;
 }
 
 

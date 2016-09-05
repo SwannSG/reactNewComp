@@ -1,8 +1,32 @@
-.passBtn {
-    composes: button from './button.css';
-    color: white;
-    background-image: linear-gradient(rgb(61, 162, 27) 0%, rgb(105, 220, 18) 100%);
-/*
-    font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 16px;*/
+.outer {
+    composes: cardWithShadowAndRoundCorners from "../custom/utilityClasses.css";
+    background-image: linear-gradient(rgb(233, 234, 241) 0%, rgb(106, 118, 208) 100%);
+    padding: 20px;
 }
+
+    .topBtns {
+        padding-bottom: 15px;
+    }
+
+        .passBtn {
+            composes: button from './button.css';
+            color: white;
+            background-image: linear-gradient(rgb(61, 162, 27) 0%, rgb(105, 220, 18) 100%);
+            margin-right: 3px;
+        }
+
+        .dblBtn {
+            composes: button from './button.css';
+            color: white;
+            background-image: linear-gradient(rgb(167, 46, 10) 0%, rgb(249, 26, 3) 100%);
+            margin-left: 3px;
+        }
+
+    .levelButtons {
+        padding-bottom: 10px;
+    }
+
+
+    .suitButtons {
+        padding-top: 5px;
+    }

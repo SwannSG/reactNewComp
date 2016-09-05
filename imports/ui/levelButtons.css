@@ -1,0 +1,34 @@
+.btn1 {
+    composes: button from './button.css';
+    margin-right: 3px;
+}
+
+.btn2 {
+    composes: button from './button.css';
+    margin-right: 3px;
+}
+
+.btn3 {
+    composes: button from './button.css';
+    margin-right: 3px;
+}
+
+.btn4 {
+    composes: button from './button.css';
+    margin-right: 3px;
+}
+
+.btn5 {
+    composes: button from './button.css';
+    margin-right: 3px;
+}
+
+.btn6 {
+    composes: button from './button.css';
+    margin-right: 3px;
+}
+
+.btn7 {
+    composes: button from './button.css';
+    margin-right: 3px;
+}

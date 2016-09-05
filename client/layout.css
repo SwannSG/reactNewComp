@@ -1,5 +1,5 @@
 /*layout.css contains layout specific configuration information*/
 
-:global(#modal) {
-    width: 500px;
+:global(#app) {
+    width: 255px;
 }

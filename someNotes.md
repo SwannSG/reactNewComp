@@ -83,3 +83,31 @@ class parentComponent extends Component {
 ```  
 
 Notice that if there is existing CSS that goes along with SubCompOne it does not go to waste. We use it to compose the class properties for SubCompOne (class=subCompOne).
+
+Where we have a tree of sub-components, parent-child-grandchild the CSS for each component is always controlled at the higher component level. Hence parent.css handles CSS for the child component, and child.css handles CSS for grandchild component.
+
+```javascript
+import styles from './parent.css';
+class parent extends Component {
+    render() {
+        return (
+            <div className={styles.outer}>
+                <Child classname={styles.child} />
+            </div>
+        )
+    }
+}
+
+import styles from './child.css';
+class child extends Component {
+    render() {
+        return (
+            <div className={this.props.classname}>
+                <GrandChild classname={styles.grandchild} />
+            </div>
+        )
+    }
+}
+```
+
+Notice *styles.outer* which always encapsulates the full component. All the sub-components will exist between the div with classname "outer".

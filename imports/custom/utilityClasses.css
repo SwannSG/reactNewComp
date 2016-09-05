@@ -24,6 +24,17 @@
     justify-content: space-between;
 }
 
+/*flex row, vetically centered, horizontally spread*/
+.fRow-vCenter-hLeft {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+
+
+
 /*modal in screen center, needs work*/
 .modal {
   /*max-height: calc(100% - 100px);*/
