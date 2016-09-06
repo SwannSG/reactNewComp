@@ -1,0 +1,189 @@
+/*southHand.css*/
+
+/*common functions*/
+.fnOuter {
+    display:inline-block;
+    background-color: red;
+    position: relative;
+}
+
+.fnMeta {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+    background-color: rgba(233, 234, 241, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.fnBaseVulnerability {
+    height:15%;
+    width:40%;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+.fnBaseVulnerabilityNorth {
+    composes: fnBaseVulnerability;
+    bottom:0%;
+}
+
+.fnVulnerableNorth {
+    composes: fnBaseVulnerabilityNorth;
+    background-color: rgba(255,0,0,0.6);
+}
+
+.fnNotVulnerableNorth {
+    composes: fnBaseVulnerabilityNorth;
+    background-color: rgba(0, 255,0, 0.6);
+}
+
+.fnBaseVulnerabilitySouth {
+    composes: fnBaseVulnerability;
+    top:0%;
+}
+
+.fnVulnerableSouth {
+    composes: fnBaseVulnerabilitySouth;
+    background-color: rgba(255,0,0,0.6);
+}
+
+.fnNotVulnerableSouth {
+    composes: fnBaseVulnerabilitySouth;
+    background-color: rgba(0, 255,0, 0.6);
+}
+
+
+
+
+/*end common functions*/
+
+/*xl, extra large*/
+.outer-xl {
+    composes: fnOuter;
+}
+    .outer-xl img:not(.card1) {
+        margin-left:-181px;
+    }
+    .outer-xl img {
+        /*keep image same size, height=323px*/
+        height: 323px;
+    }
+    .meta-xl {
+        composes: fnMeta;
+    }
+
+    .vulnerable-xl-south {
+        composes: fnVulnerableSouth;
+    }
+
+    .notVulnerable-xl-south {
+        composes: fnNotVulnerableSouth;
+    }
+
+    .vulnerable-xl-north {
+        composes: fnVulnerableNorth;
+    }
+
+    .notVulnerable-xl-north {
+        composes: fnNotVulnerableNorth;
+    }
+/*end xl*/
+
+/*lg, large*/
+.outer-lg {
+    composes: fnOuter;
+}
+    .outer-lg img:not(.card1) {
+        margin-left:-162px;
+    }
+    .outer-lg img {
+        height: 289px;
+    }
+    .meta-lg {
+        composes: fnMeta;
+    }
+
+    .vulnerable-lg {
+        composes: fnVulnerable;
+    }
+
+    .notVulnerable-lg {
+        composes: fnNotVulnerable;
+    }
+/*end lg*/
+
+/*md, medium*/
+.outer-md {
+    composes: fnOuter;
+}
+    .outer-md img:not(.card1) {
+        margin-left:-129px;
+    }
+    .outer-md img {
+        height: 231px;
+    }
+    .meta-md {
+        composes: fnMeta;
+    }
+
+    .vulnerable-md {
+        composes: fnVulnerable;
+    }
+
+    .notVulnerable-md {
+        composes: fnNotVulnerable;
+    }
+/*end md*/
+
+/*sm, small*/
+.outer-sm {
+    composes: fnOuter;
+}
+    .outer-sm img:not(.card1) {
+        margin-left:-92px;
+    }
+    .outer-sm img {
+        height: 165px;
+    }
+    .meta-sm {
+        composes: fnMeta;
+        font-size:80%;
+    }
+
+    .vulnerable-sm {
+        composes: fnVulnerable;
+    }
+
+    .notVulnerable-sm {
+        composes: fnNotVulnerable;
+    }
+/*end sm*/
+
+/*xs, extra small*/
+.outer-xs {
+    composes: fnOuter;
+}
+    .outer-xs img:not(.card1) {
+        margin-left:-59px;
+    }
+    .outer-xs img {
+        height: 106px;
+    }
+    .meta-xs {
+        composes: fnMeta;
+        font-size:70%;
+    }
+
+    .vulnerable-xs {
+        composes: fnVulnerable;
+    }
+
+    .notVulnerable-xs {
+        composes: fnNotVulnerable;
+    }
+/*end xs*/

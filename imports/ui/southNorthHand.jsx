@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Meteor } from 'meteor/meteor';
 import { render } from 'react-dom';
-import styles from './southHand.css';
+import styles from './southNorthHand.css';
 
 export { SouthHand };
 
@@ -22,14 +22,22 @@ class SouthHand extends Component {
         }
     }
 
+
+
+
     render() {
         var cardArr = this.getCardArray();
+        console.log(this.props.vulnerable);
         return (
             <div className={styles['outer-'+this.props.size]}>
                 <div className={styles['meta-'+this.props.size]}>
                     <h1>South</h1>
                     <h2>{this.props.meta}</h2>
                 </div>
+
+                {
+                    this.props.vulnerable ? (<div className={styles['vulnerable-'+this.props.size]}></div>) : (<div className={styles['notVulnerable-'+this.props.size]}></div>)
+                }
 
                 {
                     cardArr.map(function(item, index) {
@@ -45,12 +53,14 @@ class SouthHand extends Component {
                         }
                     }
                 )}
-
-                {
-                    this.props.vulnerable ? <div className={styles.vulnerable}></div> : <div className={styles.notVulnerable}></div>
-                }
-
             </div>
         )
     }
+}
+
+SouthHand.propTypes = {
+    size: PropTypes.string.isRequired,
+    cards: PropTypes.array.isRequired,
+    faceup: PropTypes.bool.isRequired,
+    vulnerable: PropTypes.bool.isRequired
 }
