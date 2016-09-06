@@ -1,8 +1,8 @@
 /*layout.css contains layout specific configuration information*/
 
 :global(#app) {
-    /*width: 255px;*/
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap:nowrap;
 }
