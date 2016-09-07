@@ -1,4 +1,4 @@
-/*southHand.css*/
+/*nsHand.css*/
 
 /*common functions*/
 .fnOuter {
@@ -26,40 +26,15 @@
     transform: translateX(-50%);
 }
 
-
-.fnBaseVulnerabilityNorth {
+.fnVulnerable {
     composes: fnBaseVulnerability;
-    bottom:0%;
-}
-
-.fnVulnerableNorth {
-    composes: fnBaseVulnerabilityNorth;
     background-color: rgba(255,0,0,0.6);
 }
 
-.fnNotVulnerableNorth {
-    composes: fnBaseVulnerabilityNorth;
-    background-color: rgba(0, 255,0, 0.6);
-}
-
-.fnBaseVulnerabilitySouth {
+.fnNotVulnerable {
     composes: fnBaseVulnerability;
-    top:0%;
-}
-
-.fnVulnerableSouth {
-    composes: fnBaseVulnerabilitySouth;
-    background-color: rgba(255,0,0,0.6);
-}
-
-.fnNotVulnerableSouth {
-    composes: fnBaseVulnerabilitySouth;
     background-color: rgba(0, 255,0, 0.6);
 }
-
-
-
-
 /*end common functions*/
 
 /*xl, extra large*/
@@ -70,27 +45,10 @@
         margin-left:-181px;
     }
     .outer-xl img {
-        /*keep image same size, height=323px*/
         height: 323px;
     }
     .meta-xl {
         composes: fnMeta;
-    }
-
-    .vulnerable-xl-south {
-        composes: fnVulnerableSouth;
-    }
-
-    .notVulnerable-xl-south {
-        composes: fnNotVulnerableSouth;
-    }
-
-    .vulnerable-xl-north {
-        composes: fnVulnerableNorth;
-    }
-
-    .notVulnerable-xl-north {
-        composes: fnNotVulnerableNorth;
     }
 /*end xl*/
 
