@@ -8,6 +8,13 @@ export { NorthHand, SouthHand };
 class SouthHand extends Component {
     constructor(props) {
         super(props);
+        this.localStyle = {
+            'xl': {fontSize:'100%'},
+            'lg': {fontSize:'90%'},
+            'md': {fontSize:'80%'},
+            'sm': {fontSize:'70%'},
+            'xs': {fontSize:'60%'},
+        }
     }
 
     getCardArray() {
@@ -37,7 +44,7 @@ class SouthHand extends Component {
         console.log(this.props.vulnerable);
         return (
             <div className={styles['outer-'+this.props.size]}>
-                <div className={styles['meta-'+this.props.size]}>
+                <div className={styles.fnMeta} style={this.localStyle[this.props.size]}>
                     <h1>South</h1>
                     <h2>{this.props.meta}</h2>
                 </div>

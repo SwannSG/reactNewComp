@@ -15,7 +15,7 @@
     text-align: center;
     background-color: rgba(233, 234, 241, 0.6);
     color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
+    padding: 3%;
 }
 
 .fnBaseVulnerability {
@@ -47,9 +47,6 @@
     .outer-xl img {
         height: 323px;
     }
-    .meta-xl {
-        composes: fnMeta;
-    }
 /*end xl*/
 
 /*lg, large*/
@@ -61,17 +58,6 @@
     }
     .outer-lg img {
         height: 289px;
-    }
-    .meta-lg {
-        composes: fnMeta;
-    }
-
-    .vulnerable-lg {
-        composes: fnVulnerable;
-    }
-
-    .notVulnerable-lg {
-        composes: fnNotVulnerable;
     }
 /*end lg*/
 
@@ -85,17 +71,6 @@
     .outer-md img {
         height: 231px;
     }
-    .meta-md {
-        composes: fnMeta;
-    }
-
-    .vulnerable-md {
-        composes: fnVulnerable;
-    }
-
-    .notVulnerable-md {
-        composes: fnNotVulnerable;
-    }
 /*end md*/
 
 /*sm, small*/
@@ -108,18 +83,6 @@
     .outer-sm img {
         height: 165px;
     }
-    .meta-sm {
-        composes: fnMeta;
-        font-size:80%;
-    }
-
-    .vulnerable-sm {
-        composes: fnVulnerable;
-    }
-
-    .notVulnerable-sm {
-        composes: fnNotVulnerable;
-    }
 /*end sm*/
 
 /*xs, extra small*/
@@ -131,17 +94,5 @@
     }
     .outer-xs img {
         height: 106px;
-    }
-    .meta-xs {
-        composes: fnMeta;
-        font-size:70%;
-    }
-
-    .vulnerable-xs {
-        composes: fnVulnerable;
-    }
-
-    .notVulnerable-xs {
-        composes: fnNotVulnerable;
     }
 /*end xs*/
