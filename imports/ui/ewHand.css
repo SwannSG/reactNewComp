@@ -1,0 +1,91 @@
+.fnOuter {
+    display: flex;
+    flex-direction:column;
+    position:relative;
+    /*transform: rotate(-180deg);*/
+}
+
+.fnMeta {
+    position:absolute;
+    text-align: center;
+    background-color: rgba(233, 234, 241, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    display:inline-block;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-25%) translateY(-50%) rotate(90deg);
+    padding: 1% 3% 3% 3%;
+}
+
+.fnBaseVulnerability {
+    width:15%;
+    height:40%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.fnVulnerable {
+    composes: fnBaseVulnerability;
+    background-color: rgba(255,0,0,0.6);
+}
+
+.fnNotVulnerable {
+    composes: fnBaseVulnerability;
+    background-color: rgba(0, 255,0, 0.6);
+}
+
+.outer-xl {
+    composes: fnOuter;
+}
+    .outer-xl img:not(.card1) {
+        margin-top:-181px;
+    }
+    .outer-xl img {
+        width: 323px;
+    }
+/*end xl*/
+
+.outer-lg {
+    composes: fnOuter;
+}
+    .outer-lg img:not(.card1) {
+        margin-top:-162px;
+    }
+    .outer-lg img {
+        width: 289px;
+    }
+/*end lg*/
+
+.outer-md {
+    composes: fnOuter;
+}
+    .outer-md img:not(.card1) {
+        margin-top:-129px;
+    }
+    .outer-md img {
+        width: 231px;
+    }
+/*end md*/
+
+.outer-sm {
+    composes: fnOuter;
+}
+    .outer-sm img:not(.card1) {
+        margin-top:-92px;
+    }
+    .outer-sm img {
+        width: 165px;
+    }
+/*end sm*/
+
+.outer-xs {
+    composes: fnOuter;
+}
+    .outer-xs img:not(.card1) {
+        margin-top:-59px;
+    }
+    .outer-xs img {
+        width: 106px;
+    }
+/*end xs*/

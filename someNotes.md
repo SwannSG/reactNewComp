@@ -115,3 +115,15 @@ Notice *styles.outer* which always encapsulates the full component. All the sub-
 ##Some Inline Styles Still Needed
 
 Sometimes inline styles are very helpful. If the component view depends on parameters that cannot easily be generated in plain CSS, then this is a good case for CSS. For example, if we wish to adapt font-size based on parent container size, there is no easy way to do this directly in CSS.
+
+This is also sometimes required because *composes* only allows a single selector.
+
+```javascript
+.singleClassName {
+    composes: // works here
+}
+
+.singleClassName p {
+    composes: // does not work here, error message .... "single selector"
+}
+```

@@ -1,3 +1,12 @@
+/*center in middle of container, container must have display: relative*/
+.absoluteCenter {
+    position:absolute;
+    display:inline-block;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%) translateY(-50%);
+}
+
 /*simple card with shadow and rounded corners*/
 .cardWithShadowAndRoundCorners {
     border-radius: 6px;

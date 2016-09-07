@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 import { SettingsForm } from '../imports/ui/settingsForm.jsx';
 import { BidBox } from '../imports/ui/bidBox.jsx';
 import { NorthHand, SouthHand } from '../imports/ui/nsHand.jsx';
+import { WestHand, EastHand } from '../imports/ui/ewHand.jsx';
 
 
 import './layout.css';
