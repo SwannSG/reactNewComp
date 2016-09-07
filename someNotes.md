@@ -111,3 +111,7 @@ class child extends Component {
 ```
 
 Notice *styles.outer* which always encapsulates the full component. All the sub-components will exist between the div with classname "outer".
+
+##Some Inline Styles Still Needed
+
+Sometimes inline styles are very helpful. If the component view depends on parameters that cannot easily be generated in plain CSS, then this is a good case for CSS. For example, if we wish to adapt font-size based on parent container size, there is no easy way to do this directly in CSS.
